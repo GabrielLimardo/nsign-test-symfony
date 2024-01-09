@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "9345cd95-f4e7-4a3c-babc-6b55a3534eeb",
+		"name": "nsign-test-symfony",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18723370"
+	},
+	"item": [
+		{
+			"name": "stackoverflow Posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/stackoverflow_posts?order=desc&sort=activity&tagged=javascript",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"stackoverflow_posts"
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "desc",
+							"description": "Result order - desc or asc"
+						},
+						{
+							"key": "sort",
+							"value": "activity",
+							"description": "Order for : activity creation or votes\n\nactivity – last_activity_date\ncreation – creation_date\nvotes – score"
+						},
+						{
+							"key": "page",
+							"value": "",
+							"description": "Pages - 0-999",
+							"disabled": true
+						},
+						{
+							"key": "pagesize",
+							"value": "",
+							"description": "Pages size -0-999",
+							"disabled": true
+						},
+						{
+							"key": "fromdate",
+							"value": "2024-01-09",
+							"description": "Creation from- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "todate",
+							"value": "",
+							"description": "Creation to- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "max",
+							"value": "",
+							"description": "Last Activity from- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "min",
+							"value": "",
+							"description": "Last Activity to- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "tagged",
+							"value": "javascript"
+						}
+					]
+				},
+				"description": "StartFragment[Usage of /posts [GET] - Stack Exchange API](https://api.stackexchange.com/docs/posts)EndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "stackoverflow Questions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/stackoverflow_questions?order=desc&sort=activity",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"stackoverflow_questions"
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "desc",
+							"description": "Result order - desc or asc"
+						},
+						{
+							"key": "sort",
+							"value": "activity",
+							"description": "Order for : activity creation, votes,hot, week and month\n\nactivity – last_activity_date\ncreation – creation_date\nvotes – score\nhot – by the formula ordering the hot tab\nDoes not accept min or max\nweek – by the formula ordering the week tab\nDoes not accept min or max\nmonth – by the formula ordering the month tab\nDoes not accept min or max"
+						},
+						{
+							"key": "page",
+							"value": "",
+							"description": "Pages - 0-999",
+							"disabled": true
+						},
+						{
+							"key": "pagesize",
+							"value": "",
+							"description": "Pages size -0-999",
+							"disabled": true
+						},
+						{
+							"key": "fromdate",
+							"value": "2024-01-09",
+							"description": "Creation from- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "todate",
+							"value": "",
+							"description": "Creation to- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "max",
+							"value": "",
+							"description": "Last Activity from- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "min",
+							"value": "",
+							"description": "Last Activity to- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "tagged",
+							"value": "",
+							"description": "type string",
+							"disabled": true
+						}
+					]
+				},
+				"description": "StartFragment[Usage of /questions [GET] - Stack Exchange API](https://api.stackexchange.com/docs/questions)EndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "stackoverflow Answers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/stackoverflow_answers?order=desc&sort=activity",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"stackoverflow_answers"
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "desc",
+							"description": "Result order - desc or asc"
+						},
+						{
+							"key": "sort",
+							"value": "activity",
+							"description": "Order for : activity creation or votes\n\nactivity – last_activity_date\ncreation – creation_date\nvotes – score"
+						},
+						{
+							"key": "page",
+							"value": "",
+							"description": "Pages - 0-999",
+							"disabled": true
+						},
+						{
+							"key": "pagesize",
+							"value": "",
+							"description": "Pages size -0-999",
+							"disabled": true
+						},
+						{
+							"key": "fromdate",
+							"value": "2024-01-09",
+							"description": "Creation from- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "todate",
+							"value": "",
+							"description": "Creation to- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "max",
+							"value": "",
+							"description": "Last Activity from- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "min",
+							"value": "",
+							"description": "Last Activity to- YYYY-MM-DD",
+							"disabled": true
+						},
+						{
+							"key": "tagged",
+							"value": "",
+							"description": "type string",
+							"disabled": true
+						}
+					]
+				},
+				"description": "StartFragment[Usage of /answers [GET] - Stack Exchange API](https://api.stackexchange.com/docs/answers)EndFragment"
+			},
+			"response": []
+		}
+	]
+}
