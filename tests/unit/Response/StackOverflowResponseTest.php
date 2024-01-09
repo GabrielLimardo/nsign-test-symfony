@@ -12,7 +12,6 @@ class StackOverflowResponseTest extends TestCase
 
     public function setUp(): void
     {
-        // Datos de ejemplo que simulan la respuesta de StackOverflow
         $this->mockData = [
             'items' => [
                 [
