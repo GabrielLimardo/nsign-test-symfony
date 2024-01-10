@@ -10,7 +10,9 @@ Este proyecto consiste en una API construida en Symfony que interactúa con la A
 ## Instalación y Configuración
 
 1. Ejecuta `composer update` para instalar todas las dependencias necesarias.
-2. Inicia el servidor Symfony con el comando `symfony server:start`.
+2. Cambiar el nombre del archivo `.env copy a .env`.
+3. Inicia el servidor Symfony con el comando `symfony server:start`.
+4. Inicia test automatizados Symfony con el comando `php bin/phpunit`.
 
 ## Uso de la API
 
