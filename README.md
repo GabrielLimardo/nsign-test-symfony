@@ -43,8 +43,5 @@ El servicio estará disponible en las siguientes rutas:
 - Al hacer solicitudes a cualquiera de los endpoints, asegúrate de proporcionar los parámetros necesarios según la documentación de la API.
 - Consulta la documentación adicional o los comentarios en el código fuente para obtener más detalles sobre cada endpoint y sus parámetros.
 
-## Configuración de Docker Symfony
-
-
 
 
