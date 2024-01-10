@@ -26,7 +26,6 @@ class StackOverflowRequest
                 throw new \InvalidArgumentException('Invalid sort option for questions.');
             }
             
-            // Restricciones para min y max
             $min = $request->get('min');
             $max = $request->get('max');
             if ($min !== null || $max !== null) {

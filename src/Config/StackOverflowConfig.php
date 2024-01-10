@@ -10,5 +10,4 @@ class StackOverflowConfig
     public const POSTS_VARIABLE = 'Posts';
     public const ANSWERS_VARIABLE = 'Answers';
     public const POST_RESTRICTED_SORT_OPTIONS = ['hot', 'week', 'month'];
-    
 }

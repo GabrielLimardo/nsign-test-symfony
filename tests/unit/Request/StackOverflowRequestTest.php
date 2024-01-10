@@ -39,20 +39,20 @@ class StackOverflowRequestTest extends WebTestCase
         $this->assertEquals(10, $stackOverflowRequest->min);
     }
 
-    // public function testSetFromRequestWithInvalidSortForQuestions()
-    // {
-    //     $request = new Request([], [
-    //         'order' => 'desc',
-    //         'sort' => 'invalid_sort_option'
-    //     ]);
+    public function testSetFromRequestWithInvalidSortForQuestions()
+    {
+        $request = new Request([], [
+            'order' => 'desc',
+            'sort' => 'hot'
+        ]);
 
-    //     $stackOverflowRequest = new StackOverflowRequest();
+        $stackOverflowRequest = new StackOverflowRequest();
 
-    //     $this->expectException(\InvalidArgumentException::class);
-    //     $this->expectExceptionMessage('Invalid sort option for questions.');
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('Invalid sort option for questions.');
 
-    //     $stackOverflowRequest->setFromRequest($request, StackOverflowConfig::QUESTION_VARIABLE);
-    // }
+        $stackOverflowRequest->setFromRequest($request, StackOverflowConfig::QUESTION_VARIABLE);
+    }
 
     public function testSetFromRequestWithMinAndMaxForQuestions()
     {
@@ -69,5 +69,4 @@ class StackOverflowRequestTest extends WebTestCase
         $stackOverflowRequest = new StackOverflowRequest();
         $stackOverflowRequest->setFromRequest($request, StackOverflowConfig::QUESTION_VARIABLE);
     }
-
 }
